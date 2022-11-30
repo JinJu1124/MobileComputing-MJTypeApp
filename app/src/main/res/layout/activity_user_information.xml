@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User_information">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 이름은?"
+            android:textSize="20dp"
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="serif"
+            />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="당신의 성별은?"
+            android:fontFamily="serif"/>
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/maru"
+                android:layout_width="128dp"
+                android:layout_height="121dp"
+                app:srcCompat="@drawable/information"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/mari"
+                android:layout_width="128dp"
+                android:layout_height="121dp"
+                app:srcCompat="@drawable/informationmari"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/_man"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="남자" />
+
+            <RadioButton
+                android:id="@+id/_woman"
+                android:fontFamily="serif"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="여자" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Startbutton"
+            android:layout_marginTop="30dp"
+            app:backgroundTint="#3F51B5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="유형검사 시작"
+            android:fontFamily="serif"/>
+
+    </LinearLayout>
+
+</LinearLayout>
